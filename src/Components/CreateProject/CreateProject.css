@@ -1,0 +1,12 @@
+progress[value] {
+    width: 250px;
+    height: 20px;
+}
+
+.task-added {
+    margin-top: 20px;
+    background: #FFEFE1;
+    border-radius: 40px;
+    padding: 10px 22px;
+    color: #F07D13;
+}

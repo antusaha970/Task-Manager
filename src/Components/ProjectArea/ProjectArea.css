@@ -2,8 +2,10 @@
     background: #FFFFFF;
     border-radius: 32px;
     width: 950px;
-    height: 838px;
+    min-height: 838px;
+    max-height: auto;
     padding: 24px;
+    margin-bottom: 50px;
 }
 
 .heading {

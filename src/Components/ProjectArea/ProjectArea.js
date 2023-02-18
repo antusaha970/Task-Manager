@@ -1,12 +1,15 @@
 import { faCirclePause, faFilter, faPlus, faStream } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import { TaskContext } from '../../App';
 import SingleTask from '../SingleTask/SingleTask';
 import './ProjectArea.css';
 
 const ProjectArea = () => {
+    const [tasksList, setTaskList] = useContext(TaskContext);
+
     return (
         <Container>
             <div className='project-container'>
@@ -27,13 +30,13 @@ const ProjectArea = () => {
                         </div>
                         <div className="col-md-4 d-flex justify-content-between">
                             <p className='grayText'>Completed</p>
-                            <FontAwesomeIcon icon={ faPlus } />
+                            <Link to={'/completed_task'}><FontAwesomeIcon icon={ faPlus } /></Link>
                         </div>
                     </div>
                     <div className="row gap mt-3">
-                        <SingleTask></SingleTask>
-                        <SingleTask></SingleTask>
-                        <SingleTask></SingleTask>
+                        {
+                            tasksList.map((task,ind) => <SingleTask key={ind} task={task}></SingleTask>)
+                        }
                     </div>
                 </div>
             </div>
