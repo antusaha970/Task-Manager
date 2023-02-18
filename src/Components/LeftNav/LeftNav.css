@@ -1,0 +1,38 @@
+.offcanvas {
+    background: #1E0059 !important;
+    width: 108px !important;
+    height: 100vh !important;
+    color: #fff;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
+}
+
+.icon-stying {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+}
+
+.input-styling {
+    width: 480px;
+    height: 44px;
+    border: none;
+    margin-left: 20px;
+    padding: 10px 18px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 30px;
+}

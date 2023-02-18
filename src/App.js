@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Router, RouterProvider, Routes } from 'react-router-dom';
 import './App.css';
-
+import LeftNav from './Components/LeftNav/LeftNav';
+import ProjectArea from './Components/ProjectArea/ProjectArea';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <LeftNav></LeftNav>
+      <Routes>
+        <Route path='/' element={<ProjectArea></ProjectArea>} />
+        <Route path='/make_Project' element={ <p>Create project</p>} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
