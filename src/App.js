@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createContext, useState } from 'react';
 import { BrowserRouter, Route, Router, RouterProvider, Routes } from 'react-router-dom';
 import './App.css';
+import CompletedTask from './Components/CompletedTask/CompletedTask';
 import CreateProject from './Components/CreateProject/CreateProject';
 import LeftNav from './Components/LeftNav/LeftNav';
 import ProjectArea from './Components/ProjectArea/ProjectArea';
@@ -14,7 +15,8 @@ function App() {
     id: 1,
     title: 'Demo Task',
     description: 'lorem ipusm lotit done lorem ipsum jita poita jani',
-    progressed: 30
+    progressed: 30,
+    isCompleted: false
   }]);
 
   const [completedTask,setCompletedTask] = useState([]);
@@ -26,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<ProjectArea></ProjectArea>} />
           <Route path='/make_Project' element={<CreateProject></CreateProject>} />
+          <Route path='/completed_task' element={ <CompletedTask></CompletedTask> } />
         </Routes>
       </BrowserRouter>
     </TaskContext.Provider>

@@ -9,16 +9,17 @@ import './SIngleTask.css';
 
 const SingleTask = ({ task }) => {
     
-    const { title, description, prograssed,id } = task;
+    const { title, description, prograssed,id,isCompleted } = task;
 
     const [taskList,setTaskList,completedTask,setCompletedTask] = useContext(TaskContext);
 
     const handleDeleteTask = (id) => {
         const newTaskList = taskList.filter(task => task.id !== id);
         const taskForDelete = taskList.find(task => task.id === id);
-        const editTask = {...taskForDelete,isCompleted: true};
+        // const editTask = {...taskForDelete,isCompleted: true};
+        taskForDelete.isCompleted = true;
         setTaskList(newTaskList);
-        setCompletedTask([...completedTask,editTask]);
+        setCompletedTask([...completedTask,taskForDelete]);
     }
     return (
         <div className='task-container col-md-4'>
@@ -30,9 +31,9 @@ const SingleTask = ({ task }) => {
                 <p>{description}</p>
             </div>
             <div className="project-area-end">
-                <div className="loader">
+                {!isCompleted ? <div className="loader">
                     <div className="loaderBar"></div>
-                </div>
+                </div>: <p>Task Finished</p>}
             </div>
         </div>
     );
