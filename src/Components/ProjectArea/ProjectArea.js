@@ -11,7 +11,7 @@ const ProjectArea = () => {
     const [tasksList, setTaskList] = useContext(TaskContext);
 
     return (
-        <Container>
+        <Container fluid>
             <div className='project-container'>
                 <div className="title-area">
                     <div className="top-title">

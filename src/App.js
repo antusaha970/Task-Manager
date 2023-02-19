@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Router, RouterProvider, Routes } from 'react-rout
 import './App.css';
 import CompletedTask from './Components/CompletedTask/CompletedTask';
 import CreateProject from './Components/CreateProject/CreateProject';
+import ImportantTask from './Components/ImportantTask/ImportantTask';
 import LeftNav from './Components/LeftNav/LeftNav';
 import ProjectArea from './Components/ProjectArea/ProjectArea';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/' element={<ProjectArea></ProjectArea>} />
           <Route path='/make_Project' element={<CreateProject></CreateProject>} />
           <Route path='/completed_task' element={ <CompletedTask></CompletedTask> } />
+          <Route path='/important_tasks' element={ <ImportantTask></ImportantTask> } />
         </Routes>
       </BrowserRouter>
     </TaskContext.Provider>
