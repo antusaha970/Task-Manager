@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 import './LeftNav.css';
 
 function LeftNav() {
@@ -17,6 +18,7 @@ function LeftNav() {
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <input type="text" className='me-auto input-styling' placeholder='Search'/>
+            <Navbar.Brand>Smart Task-Manager</Navbar.Brand>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -28,13 +30,10 @@ function LeftNav() {
               <Offcanvas.Body>
                 
                 <div className="icon-container">
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faHouse } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faUser } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faMessage } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faMessage } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faClock } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faFile } />
-                    <FontAwesomeIcon  className='icon-stying'  icon={ faGear } />
+                  <Link to='/'>Home</Link>
+                  <Link to='/make_Project'>Create Task</Link>
+                  <Link to='/'>On going</Link>
+                  <Link to='/completed_task'>Completed Task</Link>
                 </div>
                 
               </Offcanvas.Body>

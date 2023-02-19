@@ -68,8 +68,8 @@ const CreateProject = () => {
                         Set your task Priority
                     </Form.Text>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
+                <Button className='button' type="submit">
+                    Add Task
                 </Button>
             </Form>
             <Link to={'/'} style={{ textDecoration: 'none' }}>

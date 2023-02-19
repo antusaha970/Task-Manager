@@ -21,7 +21,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 32px;
+    /* padding: 32px; */
+}
+.icon-container a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
 }
 
 .input-styling {

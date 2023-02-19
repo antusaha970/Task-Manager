@@ -1,0 +1,68 @@
+.right {
+    width: 294px;
+    height: 635px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.show-time {
+    width: 246px;
+    height: 78px;
+    background: #ECF2FF;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.font-style-right {
+    margin-bottom: 0;
+    color: #09001A;
+    font-weight: 700;
+}
+
+.clock {
+    font-size: 40px;
+}
+
+.total-project {
+    width: 117px;
+    height: 92px;
+    background: #FEEDFF;
+    border-radius: 14px;
+    padding: 20px 16px;
+}
+
+.t-p{
+    
+    border-left: 4px solid  #F93EFF;
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 22px;
+}
+.cnt-container{
+    flex-direction: row;
+    width: 200px;
+}
+
+.important-project{
+    background: #FFEFE1;
+}
+.important-project .t-p{
+    border-left: 4px solid #F07D13;
+}
+
+.cmp-project{
+    background: #F1ECFF;
+}
+.cmp-project .t-p{
+    border-left: 4px solid #754BE5;;
+}
+.mod-project{
+    background: #ECF2FF;
+}
+.mod-project .t-p{
+    
+    border-left: 4px solid  #1563FF;
+}
