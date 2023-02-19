@@ -109,3 +109,7 @@
         width: 0%;
     }
 }
+
+.mouse-point{
+    cursor: pointer;
+}

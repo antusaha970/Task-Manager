@@ -25,7 +25,7 @@ const SingleTask = ({ task }) => {
         <div className='task-container col-md-4'>
             <div className="project-top-area">
                 <p className='title-text'>{title}</p>
-                <p title='Delete task' onClick={()=> handleDeleteTask(id)}><FontAwesomeIcon icon={ faTrash} /></p>
+                <p title='Delete task' className='mouse-point' onClick={()=> handleDeleteTask(id)}><FontAwesomeIcon icon={ faTrash} /></p>
             </div>
             <div className="project-area-center">
                 <p>{description}</p>

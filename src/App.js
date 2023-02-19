@@ -15,7 +15,7 @@ function App() {
     id: 1,
     title: 'Demo Task',
     description: 'lorem ipusm lotit done lorem ipsum jita poita jani',
-    progressed: 30,
+    priority: 'Moderate',
     isCompleted: false
   }]);
 

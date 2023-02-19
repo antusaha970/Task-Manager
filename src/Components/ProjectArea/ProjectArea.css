@@ -32,6 +32,10 @@
     color: #FFFFFF;
 }
 
-.grayText{
+.grayText {
     color: #615D69;
+}
+
+.mouse-point{
+    cursor: pointer;
 }

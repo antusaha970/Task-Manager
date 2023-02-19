@@ -22,20 +22,24 @@ const ProjectArea = () => {
                     <div className="row mt-4">
                         <div className="col-md-4 d-flex justify-content-between">
                             <p className='grayText'>Started</p>
-                            <FontAwesomeIcon icon={ faPlus } />
+                            <FontAwesomeIcon icon={faPlus} />
                         </div>
-                        <div className="col-md-4 d-flex justify-content-between">
-                            <p className='grayText'>On Going</p>
-                            <FontAwesomeIcon icon={ faPlus } />
+                        <div className="col-md-4">
+                            <Link to={'/important_tasks'} className='d-flex justify-content-between text-decoration-none '>
+                                <p className='grayText'>View Important tasks</p>
+                                <FontAwesomeIcon icon={faPlus} className='font-animation' />
+                            </Link>
                         </div>
-                        <div className="col-md-4 d-flex justify-content-between">
-                            <p className='grayText'>Completed</p>
-                            <Link to={'/completed_task'}><FontAwesomeIcon icon={ faPlus } /></Link>
+                        <div className="col-md-4">
+                            <Link to={'/completed_task'} className='d-flex justify-content-between text-decoration-none '>
+                                <p className='grayText'>Completed</p>
+                                <FontAwesomeIcon icon={faPlus} className='font-animation' />
+                            </Link>
                         </div>
                     </div>
                     <div className="row gap mt-3">
                         {
-                            tasksList.map((task,ind) => <SingleTask key={ind} task={task}></SingleTask>)
+                            tasksList.map((task, ind) => <SingleTask key={ind} task={task}></SingleTask>)
                         }
                     </div>
                 </div>
