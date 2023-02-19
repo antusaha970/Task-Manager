@@ -16,7 +16,7 @@ function App() {
   const [taskList, setTaskList] = useState([{
     id: 1,
     title: 'Demo Task',
-    description: 'lorem ipusm lotit done lorem ipsum jita poita jani',
+    description: 'This is a demo task. To add task please click on create task. to delete task please click on delete icon.',
     priority: 'Moderate',
     isCompleted: false
   }]);
