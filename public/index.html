@@ -23,90 +23,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Functional Task Management</title>
-  <style>
-    .l-container{
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .ld {
-      --dim: 3rem;
-      width: var(--dim);
-      height: var(--dim);
-      position: relative;
-      animation: spin988 2s linear infinite;
-    }
-
-    .ld .cl {
-      --color: #333;
-      --dim: 1.2rem;
-      width: var(--dim);
-      height: var(--dim);
-      background-color: var(--color);
-      border-radius: 50%;
-      position: absolute;
-    }
-
-    .ld .cl:nth-child(1) {
-      top: 0;
-      left: 0;
-    }
-
-    .ld .cl:nth-child(2) {
-      top: 0;
-      right: 0;
-    }
-
-    .ld .cl:nth-child(3) {
-      bottom: 0;
-      left: 0;
-    }
-
-    .ld .cl:nth-child(4) {
-      bottom: 0;
-      right: 0;
-    }
-
-    @keyframes spin988 {
-      0% {
-        transform: scale(1) rotate(0);
-      }
-
-      20%,
-      25% {
-        transform: scale(1.3) rotate(90deg);
-      }
-
-      45%,
-      50% {
-        transform: scale(1) rotate(180deg);
-      }
-
-      70%,
-      75% {
-        transform: scale(1.3) rotate(270deg);
-      }
-
-      95%,
-      100% {
-        transform: scale(1) rotate(360deg);
-      }
-    }
-  </style>
+  
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
-    <div class="l-container">
-      <div class="ld">
-        <div class="cl"></div>
-        <div class="cl"></div>
-        <div class="cl"></div>
-        <div class="cl"></div>
-      </div>
     </div>
 
   </div>
